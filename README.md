@@ -19,9 +19,9 @@ Add-Type -Path "C:\Program Files\Common Files\microsoft shared\Web Server Extens
 Add-Type -Path "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.Sharepoint.Client.UserProfiles.dll"
 
 #get authentication
-$username = "aditya@oystera803.onmicrosoft.com"
-$site = "https://oystera803.sharepoint.com"
-$password = "htc_mozart7"
+$username = ""
+$site = ""
+$password = ""
 $securePassword = ConvertTo-SecureString $password -AsPlainText -Force 
 $clientcontext = New-Object Microsoft.SharePoint.Client.ClientContext($site)
 $credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($username, $securePassword)
